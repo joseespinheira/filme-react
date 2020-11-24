@@ -1,0 +1,22 @@
+input {
+    margin: 20px 50px;
+    border-radius: 20px;
+    border-color: #ebebeb;
+    border: 0px;
+    padding: 0 30px;
+    width: -webkit-fill-available;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    height: 38px;
+    background: #ebebeb;
+    color: #84aac2;
+}
+
+.content {
+    width: 1024px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

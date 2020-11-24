@@ -1,0 +1,8 @@
+input {
+    margin: 0 10px;
+    border-radius: 10px;
+    border-color: #cccccc;
+    padding: 0 10px;
+    width: -webkit-fill-available;
+    margin-bottom: 20px;
+}
