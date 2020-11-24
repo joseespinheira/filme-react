@@ -44,9 +44,9 @@ const Description = (props) => {
                                 <div><h4>Situação</h4>{movie.status}</div>
                                 <div><h4>Idioma</h4>{movie.original_language}</div>
                                 <div><h4>Duração</h4>{movie.runtime}</div>
-                                <div><h4>Orçamento</h4>{movie.budget}</div>
-                                <div><h4>Receita</h4>{movie.revenue}</div>
-                                <div><h4>Lucro</h4>{movie.revenue - movie.budget}</div>
+                                <div><h4>Orçamento</h4>{parseInt(movie.budget).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</div>
+                                <div><h4>Receita</h4>{movie.revenue.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</div>
+                                <div><h4>Lucro</h4>{(movie.revenue - movie.budget).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</div>
                             </div>
                         </section>
                         <div className="list-genero">
