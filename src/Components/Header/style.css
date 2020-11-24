@@ -1,4 +1,4 @@
-h1 {
+h1.menu {
     display: flex;
     justify-content: center;
     background: #116193;
@@ -7,9 +7,5 @@ h1 {
     padding: 24px 0;
     margin-bottom: 20px;
     color: #00e8e4;
-    width: 1024px;
-}
-
-.flex {
-    margin-bottom: 30px;
+    width: auto;
 }

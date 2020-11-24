@@ -27,11 +27,74 @@ h5 {
 /* @media screen and (min-width: 1024px) and (max-width: 900px) { */
 
 @media screen and (min-width: 1024px) {
-    #root {
-        max-width: 1024px;
+    .card {
+        width: 1024px;
     }
     body {
         display: flex;
         justify-content: center;
+    }
+    h1.menu {
+        width: fit-content;
+    }
+    #root {
+        width: 100vw;
+        display: flow-root;
+        text-align: -webkit-center;
+    }
+    .content {
+        width: 1024px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1065px) {
+    div.imagem {
+        text-align: right;
+        margin: -10px 0px 0px -40px;
+        width: 100vw;
+        height: 25vh;
+        z-index: 2;
+        /* position: relative; */
+        overflow: hidden;
+    }
+    .imagem img {
+        /* width: 100%; */
+        border: 0px;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        z-index: -1;
+        /* overflow: hidden; */
+    }
+    .container {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 729px) {
+    div.imagem {
+        text-align: right;
+        margin: -10px 0px 0px -40px;
+        width: 100vw;
+        height: 25vh;
+        z-index: 2;
+        /* position: relative; */
+        overflow: hidden;
+    }
+    .imagem img {
+        /* width: 100%; */
+        border: 0px;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        z-index: -1;
+        /* overflow: hidden; */
+    }
+    .container {
+        flex-wrap: wrap-reverse;
+    }
+    .info {
+        display: block !important;
     }
 }

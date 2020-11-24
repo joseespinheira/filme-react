@@ -1,8 +1,8 @@
 .card {
     background: #f2f2f2;
-    width: 100%;
     height: 100%;
     margin: 50px 20px;
+    text-align: -webkit-left;
 }
 
 .title {
@@ -50,6 +50,7 @@ h1 {
     margin: 0px 0px 0px 40px;
     padding-top: 10px;
     display: flex;
+    width: calc(100% - 40px);
 }
 
 section {
@@ -62,17 +63,19 @@ p {
 }
 
 .imagem img {
-    width: 100%;
+    /* width: 100%; */
     border: 0px;
+    /* height: 100%; */
+    /* width: 30vw; */
 }
 
 div.dados {
-    width: 70%;
+    width: auto;
     padding-right: 30px;
 }
 
 div.imagem {
-    width: 30%;
+    text-align: right;
     margin-top: -10px;
 }
 
@@ -83,4 +86,5 @@ div.imagem {
 
 .list-genero {
     margin-left: -10px;
+    padding-bottom: 15px;
 }

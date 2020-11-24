@@ -7,7 +7,7 @@ const Header = (props) => {
     return (
         <div className='flex'>
             <div>
-                <h1>Movies</h1>
+                <h1 className="menu">Movies</h1>
             </div>
         </div>
     )
