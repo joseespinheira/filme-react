@@ -19,9 +19,13 @@ const Description = (props) => {
                 // }, 2000);
             })
     }, [movieId])
-    if(movie.videos){
-
+    
+    function duracao(minutos){
+        var horas = minutos/60|0;
+        var min = minutos%60;
+        return `${horas}h ${min}min`;
     }
+
     return (
         <div>
             <Header voltar="true" />
@@ -43,7 +47,7 @@ const Description = (props) => {
                             <div className="info">
                                 <div><h4>Situação</h4>{movie.status}</div>
                                 <div><h4>Idioma</h4>{movie.original_language}</div>
-                                <div><h4>Duração</h4>{movie.runtime}</div>
+                                <div><h4>Duração</h4>{duracao(movie.runtime)}</div>
                                 <div><h4>Orçamento</h4>{parseInt(movie.budget).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</div>
                                 <div><h4>Receita</h4>{movie.revenue.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</div>
                                 <div><h4>Lucro</h4>{(movie.revenue - movie.budget).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</div>
