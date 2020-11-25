@@ -13,7 +13,7 @@ input {
 }
 
 .content {
-    width: 1024px;
+    width: fit-content;
 }
 
 input:focus {
